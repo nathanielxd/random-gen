@@ -2,26 +2,29 @@
 
 Fast way of generating random strings of text and passwords.
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the package to your dependencies.
+`random_gen: ^1.0.0`
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+
+// Quickest way.
+
+final password = RandomGenerator.password();
+
+final customPassword = RandomGenerator.password(
+    length: 32,
+    includeLowercase: false
+);
+
+// Using builders.
+
+final passwordBuilder = RandomBuilder()
+    ..withSymbols(false)
+    ..withLength(8);
+
+final password = passwordBuilder.build();
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
