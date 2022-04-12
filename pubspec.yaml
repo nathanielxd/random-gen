@@ -1,7 +1,7 @@
 name: random_gen
-description: Fast way of generating random strings of text, passwords and entropy measurement.
+description: Fast way of generating random strings of text and passwords.
 version: 1.0.0
-# homepage: https://www.example.com
+homepage: https://github.com/nathanielxd/random-gen
 
 environment:
   sdk: '>=2.16.2 <3.0.0'

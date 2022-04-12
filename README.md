@@ -1,6 +1,6 @@
 # Random Gen
 
-Fast way of generating random strings of text, passwords and entropy measurement.
+Fast way of generating random strings of text and passwords.
 
 ## Features
 
